@@ -1,0 +1,10 @@
+# Local tooling
+.venv/
+.idea/
+
+# Working/extraction artifacts
+extracted/
+research/
+
+# macOS
+.DS_Store
