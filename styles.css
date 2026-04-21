@@ -634,20 +634,81 @@ main {
 
 .kpi-row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.74rem;
+  margin-top: 0.65rem;
+}
+
+.management-impact {
   margin-top: 0.95rem;
+  border: 1px solid rgba(212, 187, 105, 0.46);
+  border-radius: 16px;
+  padding: 0.9rem;
+  background: linear-gradient(140deg, rgba(212, 187, 105, 0.19), rgba(255, 255, 255, 0.9));
 }
 
-.kpi-row article {
-  border: 1px solid rgba(212, 187, 105, 0.35);
-  border-radius: 12px;
-  background: rgba(212, 187, 105, 0.14);
-  padding: 0.7rem 0.8rem;
+.impact-intro {
+  margin: 0 0 0.18rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.22rem, 2.2vw, 1.8rem);
+  color: var(--taupe-900);
+  font-weight: 700;
 }
 
-.kpi-row h4 {
-  margin-bottom: 0.25rem;
+.impact-note {
+  margin: 0.72rem 0 0;
+  font-size: 0.88rem;
+  color: var(--taupe-700);
+}
+
+.impact-card {
+  border: 1px solid rgba(109, 95, 86, 0.18);
+  border-radius: 14px;
+  background: #fff;
+  padding: 0.72rem;
+  box-shadow: 0 8px 18px rgba(39, 30, 23, 0.08);
+}
+
+.impact-tagline {
+  margin: 0 0 0.22rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.62rem;
+  color: #7b6322;
+  font-weight: 700;
+}
+
+.impact-card h4 {
+  margin-bottom: 0.42rem;
+}
+
+.impact-metric {
+  margin: 0 0 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.55rem;
+  align-items: baseline;
+  font-size: 0.84rem;
+}
+
+.impact-metric span {
+  color: var(--taupe-700);
+}
+
+.impact-metric strong {
+  color: var(--taupe-900);
+}
+
+.impact-growth {
+  margin: 0.36rem 0 0;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 187, 105, 0.55);
+  background: rgba(212, 187, 105, 0.19);
+  padding: 0.24rem 0.54rem;
+  font-size: 0.79rem;
+  font-weight: 700;
+  color: #6a4f0f;
+  width: fit-content;
 }
 
 .founders-grid {

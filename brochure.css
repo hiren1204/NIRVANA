@@ -449,21 +449,75 @@ img {
   gap: 0.55rem;
 }
 
-.proof-row article {
-  border: 1px solid rgba(212, 187, 105, 0.36);
+.proof-highlight {
+  border: 1px solid rgba(212, 187, 105, 0.46);
+  border-radius: 12px;
+  background: linear-gradient(140deg, rgba(212, 187, 105, 0.19), rgba(255, 255, 255, 0.92));
+  padding: 0.62rem;
+}
+
+.proof-intro {
+  margin: 0 0 0.2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+  color: var(--taupe-900);
+  font-weight: 700;
+}
+
+.proof-note {
+  margin: 0.56rem 0 0;
+  font-size: 0.8rem;
+  color: var(--taupe-700);
+}
+
+.proof-card {
+  border: 1px solid rgba(109, 95, 86, 0.18);
   border-radius: 10px;
-  background: rgba(212, 187, 105, 0.14);
+  background: #fff;
   padding: 0.58rem 0.62rem;
 }
 
-.proof-row h3 {
+.proof-tag {
+  margin: 0 0 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #7b6322;
+}
+
+.proof-card h3 {
   font-size: 1.18rem;
   margin-bottom: 0.15rem;
 }
 
-.proof-row p {
+.proof-metric {
+  margin: 0 0 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.45rem;
+  align-items: baseline;
+  font-size: 0.78rem;
+}
+
+.proof-metric span {
+  color: var(--taupe-700);
+}
+
+.proof-metric strong {
+  color: var(--taupe-900);
+}
+
+.proof-growth {
   margin: 0;
-  font-size: 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 187, 105, 0.55);
+  background: rgba(212, 187, 105, 0.19);
+  padding: 0.22rem 0.48rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #6a4f0f;
+  width: fit-content;
 }
 
 .founder-sheet {
